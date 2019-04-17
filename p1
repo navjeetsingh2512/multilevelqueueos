@@ -1,0 +1,22 @@
+#include<stdio.h>
+int main()
+{
+	int x, atime[10], btime[10], tquantum;
+	printf("enter number of process: ");
+	scanf("%d",&x);
+	printf("\n");
+	
+	for(int i = 0; i < x; i++) 
+    {
+        printf("Arrival Time of process[%d]: ",i+1);
+        scanf("%d", &atime[i]);
+        printf("Burst Time of process[%d]: ",i+1);
+        scanf("%d", &btime[i]);
+		printf("\n"); 
+    }
+    
+    printf("enter the time Quantum: ");
+    scanf("%d",tquantum);
+      
+      
+}
