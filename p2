@@ -1,0 +1,32 @@
+for(z=0;z<x;z++)
+		    {
+				int temp1;
+				pos=z;
+				for(j=z+1;j<x;j++)
+				{
+			    	if(pri[j]<pri[pos])
+					pos=j;
+				}
+		 
+				temp1=pri[z];
+	
+				pri[z]=pri[pos];
+	
+				pri[pos]=temp1;
+		 
+				temp1=btime[z];
+				btime[z]=btime[pos];
+				btime[pos]=temp1;
+			 	temp1=atime[z];
+				atime[z]=atime[pos];
+				atime[pos]=temp1;
+	
+				temp1=p[z];
+				p[z]=p[pos];
+				p[pos]=temp1;
+
+				temp1=temp[z];
+				temp[z]=temp[pos];
+				temp[pos]=temp1;
+		    }
+		    
